@@ -1,0 +1,7 @@
+**/*.DS_Store
+.sass-cache
+_Output/
+node_modules/
+Gemfile.lock
+_Build/js/generated
+_Build/icons/*.svg

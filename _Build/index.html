@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{{global.title}}}</title>
+        <meta name="author" content="Fishawack">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js/crucial.js"></script>
+        <link rel="stylesheet" href="css/general.css">
+        <!-- @@Live_Reload -->
+    </head>
+    <body>
+        <div class="container">
+            <div class="innerContainer">
+            {{#each content}}
+                <section class="full" id="{{name}}" data-file='[{{#each files}}"{{this.file}}"{{#unless @last}}, {{/unless}}{{/each}}]'>
+                    {{> (lookup . 'name')}}
+                </section>
+            {{/each}}
+            </div>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

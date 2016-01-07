@@ -1,0 +1,70 @@
+.chartHolder{
+  position: relative;
+  height: 0;
+}
+
+.chart{
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+
+.fillA{
+  fill: $color4;
+  color: $color4;
+}
+
+.fillB{
+  fill: $color5;
+  color: $color5;
+}
+
+.fillC{
+  fill: $color2;
+  color: $color2;
+}
+
+.fillD{
+  fill: $color4;
+  color: $color4;
+}
+
+.fillE{
+  fill: $color5;
+  color: $color5;
+}
+
+.fillFade{
+  fill: darken($color3, $shadeLow);
+  color: darken($color3, $shadeLow);
+}
+
+.reverseColor{
+    fill: lighten($color2, $shadeMed);
+}
+
+polyline{
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.axis line, .axis path{
+  stroke: lighten($color2, $shadeMed);
+  fill: none;
+  stroke-width: 2px;
+}
+
+text{
+    text-anchor: middle;
+    pointer-events: none;
+    fill: $color5;
+}
+
+/* RAIN */
+.drip{
+  stroke: $color5;
+  stroke-width: 1px;
+  stroke-dasharray: 6;
+}

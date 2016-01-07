@@ -1,0 +1,20 @@
+.icon{
+    display: inline-block;
+    width: #{$iconSize}em;
+    height: #{$iconSize}em;
+    vertical-align: middle;
+    fill: $color5;
+    
+    &:first-child{
+        margin-right: 0.3em;
+    }
+
+    &:last-child{
+        margin-left: 0.3em;
+    }
+}
+
+.icon--large{
+    width: #{$iconSize * 3}em;
+    height: #{$iconSize * 3}em;
+}

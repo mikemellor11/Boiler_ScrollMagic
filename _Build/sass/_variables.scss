@@ -1,0 +1,22 @@
+$color1 : #36394B; // Dark Blue
+$color2 : #5AD5F8; // Light Blue
+$color3 : #FFFFFF; // White
+$color4 : #F13066; // Hot Pink
+$color5 : #9093A7; // Gray
+$color6 : #CCCCCC; // Ligh Gray
+
+$spacing : 20px;
+$borderRadius : 20px;
+
+$shadeLow : 10%;
+$shadeMed : 25%;
+
+$containerSize: 1024px;
+$gridCol: 12;
+$innerPad: 0.15;
+$gutterSize: 0.175;
+$calcInnerCol: $gridCol - ($innerPad * 2);
+
+$iconSize : 3;
+
+$mobileMax : 767px;

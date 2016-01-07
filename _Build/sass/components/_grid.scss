@@ -1,0 +1,63 @@
+$susy: (
+	columns: $gridCol,
+	math: fluid,
+    gutters: $gutterSize,
+	gutter-position: after
+);
+
+.container {
+	@include container($containerSize);
+    position: relative;
+    height: 16000px;
+}
+
+.innerContainer{
+    @include span($calcInnerCol of $gridCol last);
+    @include pad($innerPad of $gridCol);
+    position: relative;
+}
+
+@include nested($calcInnerCol) {
+    .twoThirds{
+        @include span((($calcInnerCol / 3) * 2));
+        min-height: 1px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        @include breakpoint(max-width $mobileMax){
+            @include full;
+        }
+    }
+
+    .third{
+        @include span(($calcInnerCol / 3));
+        min-height: 1px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        @include breakpoint(max-width $mobileMax){
+            @include full;
+        }
+    }
+
+    .half{
+        @include span(($calcInnerCol * 0.5));
+        min-height: 1px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        @include breakpoint(max-width $mobileMax){
+            @include full;
+        }
+    }
+
+    .full{
+        @include full;
+    }
+}
